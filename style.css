@@ -1,0 +1,13 @@
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+body{
+	height: 1000px;
+}
+
+#leftButton, #rightButton {
+	border: 1px solid #fff;
+}
