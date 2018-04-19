@@ -1,34 +1,26 @@
 document.addEventListener('DOMContentLoaded',function(){
 
-	var date = new Date(new Date().getTime() + 10 * 1000);
+	var date = new Date(new Date().getTime() + 10000 * 1000);
     let cookie = document.cookie = "name=value; path=/; expires=" + date.toUTCString();
 
 	console.log(cookie)
 
-	if(cookie.length > 0){
-		alert('yes')
-	}
-	else{
-		alert('no')
-	}
-
-})
-
 
 setInterval	( function() {
 
-	if (document.cookie == "") {
-		alert ("баннер не показывать");
-	}
-	else {
-		alert ("показывать рекламу");
-	}
 
+	if(document.cookie){
+		console.log('yes')
+	}
+	else{
+		console.log('no', document.cookie, "no")
+	}
 
 
 }, 3000);
 
 
+})
 
 
 
